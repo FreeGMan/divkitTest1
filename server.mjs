@@ -1,9 +1,7 @@
-import { render } from '@divkitframework/divkit/client';
-import '@divkitframework/divkit/dist/client.css';
+import { render } from '@divkitframework/divkit/server';
 
-render({
+console.log(render({
     id: 'test',
-    target: document.querySelector('#root'),
     json: {
         "templates": {
             "wrap_content_text": {
@@ -24,4 +22,4 @@ render({
             ]
         }
     }
-});
+}));
